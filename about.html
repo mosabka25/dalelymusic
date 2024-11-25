@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>دليلي ميوزيك</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FDF7E3;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #C11B17;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .banner {
+            background-image: url('https://raw.githubusercontent.com/mosabka25/mosabaka25/327c4aad7019463731697b529095eebf103b8842/dalelycover.png');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .banner h1 {
+            font-family: 'Amiri', serif;
+            color: #00796b;
+            font-size: 4vw;
+            text-align: center;
+        }
+
+        .titles {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .titles h1, .titles h2 .titles h3, {
+            font-family: 'Amiri', serif;
+        }
+
+        .titles h1 {
+            color: #004d40;
+            font-size: 2em;
+        }
+
+        .titles h2 {
+            color: #C11B17;
+            font-size: 1.5em;
+        }
+
+.titles h3 {
+            color: #C11B17;
+            font-size: 1.3em;
+        }
+
+        .content {
+            text-align: center;
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #4a0b0a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #f4fa48;
+        }
+
+        .content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%; /* يجعل الصورة دائرية */
+    margin: 20px 0;
+    border: 5px solid #C11B17; /* اختياري: لإضافة إطار للصورة */
+}
+
+        .content h2 {
+            font-size: 2.4em;
+            color: #fafaf7;
+        }
+.content h5 {
+            font-size: 1.8em;
+            color: #fafaf7;
+        }
+
+        .content p {
+            font-size: 1.6em;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #C11B17;
+            color: white;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+<audio id="myAudio" loop>
+    <source src="https://raw.githubusercontent.com/mosabka25/dalelyinfo/a42eb3852398a540d813aaeeb0ed4b836f5d8f27/yani.mp3" type="audio/mpeg">
+    متصفحك لا يدعم تشغيل الصوت.
+</audio>
+
+<script>
+    // تشغيل الصوت عند النقر في أي مكان في الصفحة
+    document.body.addEventListener('click', function(event) {
+        var audio = document.getElementById("myAudio");
+        if (!event.target.closest('.navbar')) {
+            audio.play(); // تشغيل الصوت
+        }
+    });
+
+    // إيقاف الصوت عند النقر على الناف بار أو أي رابط داخلها
+    var navbar = document.querySelector('.navbar'); // تحديد الناف بار
+    navbar.addEventListener('click', function(event) {
+        var audio = document.getElementById("myAudio");
+        audio.pause(); // إيقاف الصوت
+    });
+
+    // إيقاف الصوت مؤقتًا عند النقر على أي رابط داخل الناف بار
+    var links = navbar.querySelectorAll('a'); // تحديد الروابط داخل الناف بار
+    links.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var audio = document.getElementById("myAudio");
+            audio.pause(); // إيقاف الصوت
+        });
+    });
+</script>
+
+
+    <nav class="navbar">
+        <div class="navbar-links">
+            <a href="https://mosabka25.github.io/dalelymusic/index.html">⏬ تحميل التطبيق</a>
+            <a href="https://mosabka25.github.io/dalelymusic/about.html">ℹ عن التطبيق</a>
+            
+            <a href="https://mosabka25.github.io/dalelymusic/call.html">📬 اتصل بنا</a>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h1></h1>
+    </div>
+
+    <div class="titles">
+        <h1>مرحبًا بكم في " دليلي ميوزيك "</h1>
+        <h2>أدوات معلم التربية الموسيقية</h2>
+    </div>
+
+    <div class="content">
+        <h2>" دليلـي ميـوزيـك "</h2>
+<h1>*****</h1>
+<p> </p>
+        <p>
+        "دليلي ميوزيك" 
+ هو التطبيق التعليمي الرائد الذي انبثق من رؤية مبتكرة تهدف إلى الإستفادة من تكنولوجيا برمجة وتطوير التطبيقات في إنشاء تطبيق تعليمى مخصص لتنظيم الموارد التعليمية لمادة و نشاط التربية الموسيقية</p>
+   
+        <p>*****</p>
+
+        <p>
+            التطبيق يُسهم في تعزيز توفير موارد المحتوى التعليمي للزملاء الأعزاء من معلمي المادة، حيث يتيح لهم الوصول إلى أدلة المعلم لعدة صفوف، خطط توزيع المناهج، 
+            دفاتر التحضير، فيديوهات المسابقات، الأغاني التعليمية، وشرح الدروس وغيرها من المواد بطريقة مبتكرة وسهلة.
+        </p>
+        <p>
+            وبالتالي، يُمكن لمعلمي التربية الموسيقية الاستفادة المثلى من كل محتوى تعليمي متاح مع تحقيق التكامل بين جميع جوانب المادة وأنشطتها.
+        </p>
+<p>*****</p>
+<p></p>
+        
+</div>
+
+    <footer>
+        <p>© 2025 دليلي ميوزيك - Dalely Music</p>
+    </footer>
+</body>
+</html>
